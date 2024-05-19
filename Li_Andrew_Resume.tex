@@ -28,7 +28,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -63,7 +63,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item[] % remove these brackets to restore bullets
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -71,7 +71,7 @@
 }
 
 \newcommand{\resumeSubheadingThree}[3]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item % remove these brackets to restore bullets
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} \\
@@ -79,7 +79,7 @@
 }
 
 \newcommand{\resumeSubheadingTwo}[2]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}\item % remove these brackets to restore bullets
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
     \end{tabular*}\vspace{-5pt}
@@ -103,10 +103,19 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Andrew Li}} & 
-  \href{mailto:li.andrew.hua@gmail.com}{li.andrew.hua@gmail.com} \\ & 
-  703-457-0020 % \\ & 
+  % \textbf{{\Large Andrew Li}} & 
+  % \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} \\ & 
+  % 703-457-0020 \\ &
+  % 12311 Country Ridge Ln, Fairfax, VA 22033
   % \url{https://friendlyai.github.io/}
+
+  % One liner for DC jobs
+    \textbf{{\Large Andrew Li}} \\
+    12311 Country Ridge Lane, Fairfax, VA 22033 • \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} • 703-457-0020
+
+  % One liner for other jobs
+  % \textbf{{\Large Andrew Li}} \\
+  %    1585 Massachusetts Avenue \#475, Cambridge, MA 02138 • \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} • 703-457-0020
 \end{tabular*}
 
 
@@ -114,17 +123,24 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingTwo
-      {Harvard Law School (2023 - 2026)}{}
+      {Harvard Law School{\normalfont , Cambridge, MA}}{}
       \resumeItemListStart
-        \resumeItem{J.D. Candidate}
+        \resumeItem{Candidate for J.D., May 2026}
+        \resumeItem{Activities:}
+          \resumeItemListStart
+            \resumeItem{\emph{Harvard Journal of Law \& Technology}, Submissions Manager; Production Editor}
+            \resumeItem{\emph{Asia Law Society}, Asia Business Conference Co-Chair}
+            \resumeItem{\emph{China Law Society}, Symposium Co-Chair}
+          \resumeItemListEnd
     \resumeItemListEnd
     \resumeSubheadingTwo
-      {University of Virginia (2019 - 2023)}{3.99 / 4.00}
+      {University of Virginia{\normalfont , Charlottesville, VA}}{}
       \resumeItemListStart
-        \resumeItem{B.S. Computer Science, Economics and Public Policy}
+        \resumeItem{B.S. in Computer Science, Economics \& Public Policy with Highest Distinction, May 2023}
+        \resumeItem{Honors:}
           \resumeItemListStart
-            \resumeItem{Kenneth G. Elzinga Scholarship recipient}
-             \resumeItem{Duncan Clark Hyde Award recipient}
+            \resumeItem{Kenneth G. Elzinga Scholarship (awarded for exceptional academic performance in economics)}
+            \resumeItem{Duncan Clark Hyde Award recipient (awarded for exceptional academic performance in economics and general coursework)}
           \resumeItemListEnd
         % \resumeItem{Relevant coursework:}
         %       \resumeItemListStart
@@ -146,47 +162,53 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheadingThree
+      {Skadden, Arps, Slate, Meagher \& Flom LLP{\normalfont, Boston, MA}}{}{Summer Associate, {\normalfont May 2024 - July 2024}}
+      % \resumeItemListStart
+      %   \resumeItem{}
+      %   \resumeItem{}
+      %   \resumeItem{}
+      % \resumeItemListEnd
   
-    \resumeSubheadingTwo
-      {Research Assistant / University of Virginia}{August 2020 - September 2022}
+    \resumeSubheadingThree
+      {University of Virginia{\normalfont, Charlottesville, VA}}{}{Research Assistant, {\normalfont August 2020 - September 2022}}
       \resumeItemListStart
-        \resumeItem{Designed and developed secure and usable Voice Personal Assistant software in C++ and Python that improves privacy controls on current industry standards like Amazon Alexa}
-        \resumeItem{Explored security and privacy vulnerabilities in Voice Personal Assistants to publish in research}
-        \resumeItem{Contributed to a research paper identifying key weaknesses and opportunities for improvement in Voice Personal Assistant privacy controls}
+        \resumeItem{Explored security and privacy vulnerabilities in Voice Personal Assistants like Amazon Alexa for use in research paper}
+        \resumeItem{Designed and developed new privacy control features for Amazon Alexa in Python and C++, giving users more control over their sensitive data}
       \resumeItemListEnd
 
-    \resumeSubheadingTwo
-      {Software Engineering Intern / Capital One}{June 2022 - August 2022}
+    \resumeSubheadingThree
+      {Capital One{\normalfont , McLean, VA}}{}{Software Engineering Intern, {\normalfont June 2022 - August 2022}}
       \resumeItemListStart
-        \resumeItem{Built a comprehensive web app unifying disparate types of confidential cybersecurity information including events, threats, and knowledge bases}
-        \resumeItem{Engaged in daily meetings to showcase progress and discuss design ideas with project managers}
+        \resumeItem{Built comprehensive web app unifying disparate types of confidential cybersecurity information, including security events, threats, and knowledge bases}
+        \resumeItem{Met daily with project managers to showcase app development progress and discuss design ideas}
         \resumeItem{Presented project to 60+ associates in Capital One's cybersecurity department}
       \resumeItemListEnd
 
-    \resumeSubheadingTwo
-      {Policy Research Intern / Environmental Law Institute}{June 2021 - August 2021}
+    \resumeSubheadingThree
+      {Environmental Law Institute{\normalfont , Washington, DC}}{}{Policy Research Intern, {\normalfont June 2021 - August 2021}}
       \resumeItemListStart
-        \resumeItem{Research was published and featured as the lead article in The Environmental Forum}
-        \resumeItem{Researched and wrote a comprehensive 30 page literature review on the positive and negative environmental effects of the Internet of Things}
+        \resumeItem{Researched and wrote a comprehensive 30 page literature review on the environmental effects and policy concerns of the Internet of Things, published as the lead article in \emph{The Environmental Forum}, Spring 2022 issue}
         % \resumeItem{Proposed policy and governance recommendations and presented findings to staff}
         \resumeItem{Constructed a bibliographic analysis of 22k research publications in the field of AI and the environment, reporting findings to a team of researchers at ELI, Yale, and Berkeley}
       \resumeItemListEnd
 
-    \resumeSubheadingTwo
-      {Research Assistant / Woodrow Wilson Center}{June 2021 - August 2021}
+    \resumeSubheadingThree
+      {Woodrow Wilson Center{\normalfont , Washington DC}}{}{Research Assistant, {\normalfont June 2021 - August 2021}}
       \resumeItemListStart
-        \resumeItem{Worked one-on-one with a scholar to support research on China's role in international standard setting}
-        \resumeItem{Composed multiple essays synthesizing research on China-US relations and technological decoupling}
-        \resumeItem{Read and analyzed papers in both Chinese and English language to create a comparative analysis of international perspectives on decoupling during the COVID-19 pandemic}
+        \resumeItem{Worked one-on-one with a think tank scholar to support research on China's role in setting international technical standards}
+        \resumeItem{Drafted multiple essays synthesizing research on China-U.S. relations and technological decoupling}
+        \resumeItem{Read and analyzed papers in both Mandarin Chinese and English to create a comparative analysis of international perspectives on trade decoupling during the COVID-19 pandemic}
       \resumeItemListEnd
 
-    \resumeSubheadingTwo
-      {Data Science Intern / JHU Applied Physics Laboratory}{June 2020 - August 2020}
-      \resumeItemListStart
-        \resumeItem{Proposed and led a COVID-19 sentiment analysis project to examine public opinion shifts in specific areas like mask-wearing and shutdowns and how it may affect or be affected by state-level public policy}
-        % \resumeItem{Developed MySQL database for unified access to COVID-19 data from multiple sources to aid the JHU APL's COVID-19 modeling effort}
-        \resumeItem{Presented results to a team of engineers across the APL network and work was scouted for further implementation with the APL's ESSENCE health surveillance tool}
-      \resumeItemListEnd
+    % \resumeSubheadingThree
+    %   {JHU Applied Physics Laboratory{\normalfont , Laurel, MD}}{}{Data Science Intern, {\normalfont June 2020 - August 2020}}
+    %   \resumeItemListStart
+    %     \resumeItem{Proposed and led a COVID-19 sentiment analysis project to examine public opinion shifts in mask-wearing and shutdowns and their interactions with state-level public policy}
+    %     % \resumeItem{Developed MySQL database for unified access to COVID-19 data from multiple sources to aid the JHU APL's COVID-19 modeling effort}
+    %     % \resumeItem{Presented results to a team of engineers across the APL network and work was scouted for further implementation with the APL's ESSENCE health surveillance tool}
+    %   \resumeItemListEnd
       
     % \resumeSubheadingTwo
     %   {Intern / Lepton Global / Vienna, VA}{May 2019 - August 2019}
@@ -199,36 +221,36 @@
   \resumeSubHeadingListEnd
 
 %-----------ACADEMIC EXPERIENCE-----------------
-\section{Extracurriculars and Volunteering}
-  \resumeSubHeadingListStart
-    \resumeSubheadingTwo
-      {Competitor / UVA Moot Court}{September 2019 - December 2021}
-        \resumeItemListStart
-            \resumeItem{Wrote and argued complex Constitutional law cases to panels of judges}
-            \resumeItem{Only team from UVA to break into the round of 16 at Liberty University 2019}
-        \resumeItemListEnd
+% \section{Extracurriculars and Volunteering}
+%   \resumeSubHeadingListStart
+%     \resumeSubheadingTwo
+%       {Competitor / UVA Moot Court}{September 2019 - December 2021}
+%         \resumeItemListStart
+%             \resumeItem{Wrote and argued complex Constitutional law cases to panels of judges}
+%             \resumeItem{Only team from UVA to break into the round of 16 at Liberty University 2019}
+%         \resumeItemListEnd
         
-    \resumeSubheadingTwo
-      {Volunteer Coding Mentor / Capital One CODERS}{June 2022 - July 2022}
-        \resumeItemListStart
-            \resumeItem{Mentored middle-school students in web development to build a small-business webpage}
-        \resumeItemListEnd
+%     \resumeSubheadingTwo
+%       {Volunteer Coding Mentor / Capital One CODERS}{June 2022 - July 2022}
+%         \resumeItemListStart
+%             \resumeItem{Mentored middle-school students in web development to build a small-business webpage}
+%         \resumeItemListEnd
     
-    \resumeSubheadingTwo
-      {Teaching Assistant / Operating Systems}{January 2022 - May 2022}
-        \resumeItemListStart
-            \resumeItem{Assisted and taught students during office hours in both one-on-one and group settings for highest-level required computer science class}
-            \resumeItem{Refined course curriculum during weekly meetings with course professor}
-        \resumeItemListEnd
+%     \resumeSubheadingTwo
+%       {Teaching Assistant / Operating Systems}{January 2022 - May 2022}
+%         \resumeItemListStart
+%             \resumeItem{Assisted and taught students during office hours in both one-on-one and group settings for highest-level required computer science class}
+%             \resumeItem{Refined course curriculum during weekly meetings with course professor}
+%         \resumeItemListEnd
     
-    \resumeSubheadingTwo
-      {Teaching Assistant / Science and Technology Policy}{January 2022 - May 2022}
-        \resumeItemListStart
-            \resumeItem{Recruited students to apply to program and participated in application review and interviews}
-            \resumeItem{Designed and taught curriculum for small cohort of students focused on technology policy}
-            \resumeItem{Prepared students for summer internships in Washington D.C.}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
+%     \resumeSubheadingTwo
+%       {Teaching Assistant / Science and Technology Policy}{January 2022 - May 2022}
+%         \resumeItemListStart
+%             \resumeItem{Recruited students to apply to program and participated in application review and interviews}
+%             \resumeItem{Designed and taught curriculum for small cohort of students focused on technology policy}
+%             \resumeItem{Prepared students for summer internships in Washington D.C.}
+%         \resumeItemListEnd
+%   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 % \section{Projects}
@@ -288,4 +310,12 @@
 %     \resumeSubItem{\textbf{Python, Java, C/C++, HTML/CSS, JavaScript, SQL, TensorFlow, Git}}{}
 %  \resumeSubHeadingListEnd
 %--------------------------
+
+%--------LANGUAGES AND INTERESTS------------
+\section{Personal}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Proficient in Mandarin Chinese. Hobbies include coding, table tennis, East Asian literature/film, and learning guitar.}{}
+ \resumeSubHeadingListEnd
+%--------------------------
+
 \end{document}
