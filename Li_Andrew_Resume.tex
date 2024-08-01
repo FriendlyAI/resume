@@ -1,6 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
@@ -15,7 +16,6 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{setspace}
 
 
 \pagestyle{fancy}
@@ -28,7 +28,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.375in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -70,14 +70,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubheadingThree}[3]{
-  \vspace{-1pt}\item % remove these brackets to restore bullets
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
 \newcommand{\resumeSubheadingTwo}[2]{
   \vspace{-1pt}\item % remove these brackets to restore bullets
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -85,6 +77,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingThree}[3]{
+  \vspace{-1pt}\item % remove these brackets to restore bullets
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-5pt}
+}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -109,13 +108,8 @@
   % 12311 Country Ridge Ln, Fairfax, VA 22033
   % \url{https://friendlyai.github.io/}
 
-  % One liner for DC jobs
     \textbf{{\Large Andrew Li}} \\
-    12311 Country Ridge Lane, Fairfax, VA 22033 • \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} • 703-457-0020
-
-  % One liner for other jobs
-  % \textbf{{\Large Andrew Li}} \\
-  %    1585 Massachusetts Avenue \#475, Cambridge, MA 02138 • \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} • 703-457-0020
+    29 Garden St, Apt \#503, MA 02138 • \href{mailto:ali@jd26.law.harvard.edu}{ali@jd26.law.harvard.edu} • 703-457-0020
 \end{tabular*}
 
 
@@ -142,20 +136,7 @@
             \resumeItem{Kenneth G. Elzinga Scholarship (awarded for exceptional academic performance in economics)}
             \resumeItem{Duncan Clark Hyde Award recipient (awarded for exceptional academic performance in economics and general coursework)}
           \resumeItemListEnd
-        % \resumeItem{Relevant coursework:}
-        %       \resumeItemListStart
-        %         \resumeItem{Economics of Sustainability and the Environment, Economics of Risk and Uncertainty, Intermediate Micro/Macroeconomics}
-        %         \resumeItem{Science and Technology Policy for Interns, Introduction to Cybersecurity}
-        %       \resumeItemListEnd
-    %   \resumeItem{LSAT: 179}
       \resumeItemListEnd
-
-    % \resumeSubheadingTwo
-    %   {Oakton High School (2015 - 2019)}{4.60 / 4.00}
-    %   \resumeItemListStart
-    %     \resumeItem{AP Computer Science A | Advanced Computer Science AB}
-    %     \resumeItem{Multivariable Calculus | Linear Algebra}
-    %   \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -165,11 +146,9 @@
 
     \resumeSubheadingThree
       {Skadden, Arps, Slate, Meagher \& Flom LLP{\normalfont, Boston, MA}}{}{Summer Associate, {\normalfont May 2024 - July 2024}}
-      % \resumeItemListStart
-      %   \resumeItem{}
-      %   \resumeItem{}
-      %   \resumeItem{}
-      % \resumeItemListEnd
+      \resumeItemListStart
+        \resumeItem{Secondment at Liberty Mutual Insurance (James Kelleher Fellow)}
+      \resumeItemListEnd
   
     \resumeSubheadingThree
       {University of Virginia{\normalfont, Charlottesville, VA}}{}{Research Assistant, {\normalfont August 2020 - September 2022}}
